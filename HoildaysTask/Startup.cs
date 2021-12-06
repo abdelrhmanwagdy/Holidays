@@ -33,6 +33,9 @@ namespace HoildaysTask
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddRazorPages();
+
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +54,20 @@ namespace HoildaysTask
             //enable cors 
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "api",
+                    template: "api/{controller}/{action}/{id?}");
+            });
+
+            /*            app.UseMvc(routes =>
+                        {
+                            routes.MapRoute(
+                                name: "spa-fallback",
+                                template: "{*url}",
+                                defaults: new { controller = "Home", action = "Index" });
+                        });*/
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
