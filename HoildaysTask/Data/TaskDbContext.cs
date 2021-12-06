@@ -1,4 +1,5 @@
-﻿using HoildaysProject.Models;
+﻿using CountryProject.Models;
+using HoildaysProject.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,6 @@ namespace HoildaysProject.Data
         }
 
         public DbSet<Holiday> holidays { get; set; }
+        public DbSet<Country> countries { get; set; }
     }
 }
