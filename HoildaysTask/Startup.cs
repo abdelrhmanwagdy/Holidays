@@ -32,7 +32,14 @@ namespace HoildaysTask
             //Json Serialize 
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+
             services.AddRazorPages();
+
+
+            //adding task db context
+            services.AddDbContext<TaskDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DBConn")));
+
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
 
@@ -60,14 +67,6 @@ namespace HoildaysTask
                     name: "api",
                     template: "api/{controller}/{action}/{id?}");
             });
-
-            /*            app.UseMvc(routes =>
-                        {
-                            routes.MapRoute(
-                                name: "spa-fallback",
-                                template: "{*url}",
-                                defaults: new { controller = "Home", action = "Index" });
-                        });*/
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
