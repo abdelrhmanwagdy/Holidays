@@ -26,10 +26,9 @@ namespace CountryProject.Controllers
             this._countrymethods = _countrymethods;
         }
 
-        public string GetCountries()
-        {
-            return "x";
-        }
+        // fetching data  from external api and save reult in task database in countries table
+        //if the country name is already exsist while fetching it update it 
+        //if the country name is not exsist while fetching it add it 
 
         [HttpGet("FetchFromAPI")]
         public async Task<IActionResult> GetCountriesFromAPI()
@@ -86,21 +85,22 @@ namespace CountryProject.Controllers
                 return new JsonResult(new { Error = ex });
             }
         }
-
-
-
+        
         // GET: api/<CountryController>
+        //return countries with pagging 
+        // parameter _skip is used for pagging to skip first n of countries
         public IEnumerable<Country> GetCountries(int _skip = 0)
         {
             return _countrymethods.GetCountriesForClients(_skip);
         }
 
-
+        //return all countries 
         public IEnumerable<Country> GetCountriesForServer()
         {
             return _countrymethods.GetAllCountriesForServer();
         }
 
+        //return country by country name
         public Country GetCountryByName(string name)
         {
             return _countrymethods.GetCountryByName(name);
