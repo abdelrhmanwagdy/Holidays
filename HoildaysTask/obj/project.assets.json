@@ -1571,6 +1571,24 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "CountryProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
+          "MySql.EntityFrameworkCore": "5.0.8"
+        },
+        "compile": {
+          "bin/placeholder/CountryProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CountryProject.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5847,10 +5865,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "CountryProject/1.0.0": {
+      "type": "project",
+      "path": "../CountryProject/CountryProject.csproj",
+      "msbuildProject": "../CountryProject/CountryProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CountryProject >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
@@ -5883,7 +5907,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\HoildaysTask\\CountryProject\\CountryProject.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\HoildaysTask\\CountryProject\\CountryProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
