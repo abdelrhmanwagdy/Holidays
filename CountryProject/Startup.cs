@@ -70,14 +70,6 @@ namespace CountryProject
                     template: "api/{controller}/{action}/{id?}");
             });
 
-            /*            app.UseMvc(routes =>
-                        {
-                            routes.MapRoute(
-                                name: "spa-fallback",
-                                template: "{*url}",
-                                defaults: new { controller = "Home", action = "Index" });
-                        });*/
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

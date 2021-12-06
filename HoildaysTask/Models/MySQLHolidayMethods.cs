@@ -34,7 +34,8 @@ namespace HoildaysProject.Models
 
         public Holiday GetHoliday(string id)
         {
-            return _context.holidays.Where(h => h.id == id).FirstOrDefault();
+            Holiday holiday = _context.holidays.Where(h => h.id == id).FirstOrDefault();
+            return holiday;
         }
 
 
@@ -139,6 +140,25 @@ namespace HoildaysProject.Models
             _context.SaveChanges();
         }
 
+        public IEnumerable<Holiday> GetHolidaysForSpecificCountryByCountryId(int countryId)
+        {
+            Country country = _context.countries.Where(c => c.id == countryId).FirstOrDefault();
+            if (country == null)
+            {
+                throw new ArgumentException("Please enter the correct country id");
+            }
+            return _context.holidays.Where(h => h.countryId == country.id);
+        }
 
+
+        public IEnumerable<Holiday> GetHolidaysForSpecificCountryByCountryName(string countryName)
+        {
+            Country country = _context.countries.Where(c => c.name == countryName).FirstOrDefault();
+            if (country == null)
+            {
+                throw new ArgumentException("Please enter the correct country name");
+            }
+            return _context.holidays.Where(h => h.countryId == country.id);
+        }
     }
 }

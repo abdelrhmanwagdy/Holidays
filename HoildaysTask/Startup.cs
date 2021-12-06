@@ -1,4 +1,8 @@
+using CountryProject.Controllers;
+using CountryProject.Models;
+using CountryProject.Data;
 using HoildaysProject.Data;
+using HoildaysProject.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,10 +44,13 @@ namespace HoildaysTask
 
 
             //adding task db context
-            services.AddDbContext<TaskDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DBConn")));
-
+            services.AddDbContext<HoildaysProject.Data.TaskDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DBConn")));
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddScoped<IHolidayMethods, MySQLHolidayMethods>();
+            services.AddScoped<CountryController, CountryController>();
+            services.AddDbContext<CountryProject.Data.TaskDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DBConn")));
+            services.AddScoped<ICountryMethods, MySQLCountryMethods>();
 
         }
 

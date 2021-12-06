@@ -82,3 +82,13 @@ C:\Users\user\source\repos\HoildaysTask\HoildaysTask\obj\Debug\net5.0\HoildaysPr
 C:\Users\user\source\repos\HoildaysTask\HoildaysTask\obj\Debug\net5.0\ref\HoildaysProject.dll
 C:\Users\user\source\repos\HoildaysTask\HoildaysTask\obj\Debug\net5.0\HoildaysProject.pdb
 C:\Users\user\source\repos\HoildaysTask\HoildaysTask\obj\Debug\net5.0\HoildaysProject.genruntimeconfig.cache
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.Views.dll
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.Views.pdb
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.deps.json
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.runtimeconfig.json
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.runtimeconfig.dev.json
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.exe
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\HoildaysProject.StaticWebAssets.xml
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.dll
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\bin\Debug\net5.0\CountryProject.pdb
+C:\Users\user\source\repos\HoildaysTask\HoildaysTask\obj\Debug\net5.0\HoildaysProject.MvcApplicationPartsAssemblyInfo.cs

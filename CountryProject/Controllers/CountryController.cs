@@ -13,9 +13,13 @@ using System.Threading.Tasks;
 
 namespace CountryProject.Controllers
 {
+    public interface ICountryController
+    {
+    }
     [Route("api/[controller]")]
     [ApiController]
-    public class CountryController : ControllerBase
+
+    public class CountryController : ControllerBase, ICountryController
     {
         private readonly TaskDbContext _context;
         private readonly ICountryMethods _countrymethods;
@@ -85,10 +89,11 @@ namespace CountryProject.Controllers
                 return new JsonResult(new { Error = ex });
             }
         }
-        
+
         // GET: api/<CountryController>
         //return countries with pagging 
         // parameter _skip is used for pagging to skip first n of countries
+        [HttpGet]
         public IEnumerable<Country> GetCountries(int _skip = 0)
         {
             return _countrymethods.GetCountriesForClients(_skip);
