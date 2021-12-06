@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoildaysTask", "HoildaysTask\HoildaysTask.csproj", "{48832F51-BF21-4D60-9D52-435A17BA835E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoildaysProject", "HoildaysTask\HoildaysProject.csproj", "{48832F51-BF21-4D60-9D52-435A17BA835E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryProject", "CountryProject\CountryProject.csproj", "{550ADBAF-6F25-4820-90C2-7971EA89E202}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{48832F51-BF21-4D60-9D52-435A17BA835E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48832F51-BF21-4D60-9D52-435A17BA835E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48832F51-BF21-4D60-9D52-435A17BA835E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550ADBAF-6F25-4820-90C2-7971EA89E202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550ADBAF-6F25-4820-90C2-7971EA89E202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550ADBAF-6F25-4820-90C2-7971EA89E202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550ADBAF-6F25-4820-90C2-7971EA89E202}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
