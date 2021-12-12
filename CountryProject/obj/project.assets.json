@@ -5858,19 +5858,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\mahmoud\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\HoildaysTask\\CountryProject\\CountryProject.csproj",
+      "projectUniqueName": "E:\\Abdel Rahman\\HoildaysTask\\CountryProject\\CountryProject.csproj",
       "projectName": "CountryProject",
-      "projectPath": "C:\\Users\\user\\source\\repos\\HoildaysTask\\CountryProject\\CountryProject.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\HoildaysTask\\CountryProject\\obj\\",
+      "projectPath": "E:\\Abdel Rahman\\HoildaysTask\\CountryProject\\CountryProject.csproj",
+      "packagesPath": "C:\\Users\\mahmoud\\.nuget\\packages\\",
+      "outputPath": "E:\\Abdel Rahman\\HoildaysTask\\CountryProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mahmoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
